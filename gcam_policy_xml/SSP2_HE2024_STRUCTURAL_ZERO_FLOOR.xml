@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scenario>
+    <!-- FINAL PAIR ZERO FLOOR: structural market only; no forest-area target. Same policy name, market, years, and 68 leaf bindings as He2024. -->
+    <world>
+        <region name="China">
+            <policy-portfolio-standard name="HE2024_PLEDGED_RELATIVE_AREA">
+                <market>HE2024_PLEDGED_RELATIVE_AREA_market</market>
+                <policyType>subsidy</policyType>
+                <price-unit>land subsidy index scaled by 1e6 in GCAM</price-unit>
+                <output-unit>thousand km2</output-unit>
+                <fixedTax year="2025">0</fixedTax>
+                <fixedTax year="2030">0</fixedTax>
+                <fixedTax year="2035">0</fixedTax>
+                <fixedTax year="2040">0</fixedTax>
+                <fixedTax year="2045">0</fixedTax>
+                <fixedTax year="2050">0</fixedTax>
+                <fixedTax year="2055">0</fixedTax>
+                <fixedTax year="2060">0</fixedTax>
+                <fixedTax year="2065">0</fixedTax>
+                <fixedTax year="2070">0</fixedTax>
+                <fixedTax year="2075">0</fixedTax>
+                <fixedTax year="2080">0</fixedTax>
+                <fixedTax year="2085">0</fixedTax>
+                <fixedTax year="2090">0</fixedTax>
+                <fixedTax year="2095">0</fixedTax>
+                <fixedTax year="2100">0</fixedTax>
+                <constraint year="2025">0</constraint>
+                <constraint year="2030">0</constraint>
+                <constraint year="2035">0</constraint>
+                <constraint year="2040">0</constraint>
+                <constraint year="2045">0</constraint>
+                <constraint year="2050">0</constraint>
+                <constraint year="2055">0</constraint>
+                <constraint year="2060">0</constraint>
+                <constraint year="2065">0</constraint>
+                <constraint year="2070">0</constraint>
+                <constraint year="2075">0</constraint>
+                <constraint year="2080">0</constraint>
+                <constraint year="2085">0</constraint>
+                <constraint year="2090">0</constraint>
+                <constraint year="2095">0</constraint>
+                <constraint year="2100">0</constraint>
+                <min-price year="2025">0</min-price>
+                <min-price year="2030">0</min-price>
+                <min-price year="2035">0</min-price>
+                <min-price year="2040">0</min-price>
+                <min-price year="2045">0</min-price>
+                <min-price year="2050">0</min-price>
+                <min-price year="2055">0</min-price>
+                <min-price year="2060">0</min-price>
+                <min-price year="2065">0</min-price>
+                <min-price year="2070">0</min-price>
+                <min-price year="2075">0</min-price>
+                <min-price year="2080">0</min-price>
+                <min-price year="2085">0</min-price>
+                <min-price year="2090">0</min-price>
+                <min-price year="2095">0</min-price>
+                <min-price year="2100">0</min-price>
+                <max-price year="2025">200</max-price>
+                <max-price year="2030">200</max-price>
+                <max-price year="2035">200</max-price>
+                <max-price year="2040">200</max-price>
+                <max-price year="2045">200</max-price>
+                <max-price year="2050">200</max-price>
+                <max-price year="2055">200</max-price>
+                <max-price year="2060">200</max-price>
+                <max-price year="2065">200</max-price>
+                <max-price year="2070">200</max-price>
+                <max-price year="2075">200</max-price>
+                <max-price year="2080">200</max-price>
+                <max-price year="2085">200</max-price>
+                <max-price year="2090">200</max-price>
+                <max-price year="2095">200</max-price>
+                <max-price year="2100">200</max-price>
+                <price-unit>land subsidy index, scaled in GCAM by 1e6</price-unit>
+                <output-unit>thousand km2 forest land</output-unit>
+            </policy-portfolio-standard>
+            <LandAllocatorRoot name="root">
+                <LandNode name="AgroForestLand_Gobi">
+                    <LandNode name="AgroForest_NonPasture_Gobi">
+                        <LandNode name="AllForestLand_Gobi">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_Gobi">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_Gobi">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_Gobi">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_Gobi">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_AmurR">
+                    <LandNode name="AgroForest_NonPasture_AmurR">
+                        <LandNode name="AllForestLand_AmurR">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_AmurR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_AmurR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_AmurR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_AmurR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_ObR">
+                    <LandNode name="AgroForest_NonPasture_ObR">
+                        <LandNode name="AllForestLand_ObR">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_ObR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_ObR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_BoHai">
+                    <LandNode name="AgroForest_NonPasture_BoHai">
+                        <LandNode name="AllForestLand_BoHai">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_BoHai">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_BoHai">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_BoHai">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_BoHai">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_LBalkash">
+                    <LandNode name="AgroForest_NonPasture_LBalkash">
+                        <LandNode name="AllForestLand_LBalkash">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_LBalkash">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_LBalkash">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_LBalkash">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_LBalkash">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_ZiyaHe">
+                    <LandNode name="AgroForest_NonPasture_ZiyaHe">
+                        <LandNode name="AllForestLand_ZiyaHe">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_ZiyaHe">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_ZiyaHe">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_ZiyaHe">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_ZiyaHe">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_ChinaCst">
+                    <LandNode name="AgroForest_NonPasture_ChinaCst">
+                        <LandNode name="AllForestLand_ChinaCst">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_ChinaCst">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_ChinaCst">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_ChinaCst">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_ChinaCst">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_HuangHeR">
+                    <LandNode name="AgroForest_NonPasture_HuangHeR">
+                        <LandNode name="AllForestLand_HuangHeR">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_HuangHeR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_HuangHeR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_Tarim">
+                    <LandNode name="AgroForest_NonPasture_Tarim">
+                        <LandNode name="AllForestLand_Tarim">
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_Tarim">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Softwood_Forest_Tarim">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_Yangtze">
+                    <LandNode name="AgroForest_NonPasture_Yangtze">
+                        <LandNode name="AllForestLand_Yangtze">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_Yangtze">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_Yangtze">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_Yangtze">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_Yangtze">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_XunJiang">
+                    <LandNode name="AgroForest_NonPasture_XunJiang">
+                        <LandNode name="AllForestLand_XunJiang">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_XunJiang">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_XunJiang">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_XunJiang">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_XunJiang">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_Hong">
+                    <LandNode name="AgroForest_NonPasture_Hong">
+                        <LandNode name="AllForestLand_Hong">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_Hong">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_Hong">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_Hong">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_Hong">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_GangesR">
+                    <LandNode name="AgroForest_NonPasture_GangesR">
+                        <LandNode name="AllForestLand_GangesR">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_GangesR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_GangesR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_GangesR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_GangesR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_SChinaSea">
+                    <LandNode name="AgroForest_NonPasture_SChinaSea">
+                        <LandNode name="AllForestLand_SChinaSea">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_SChinaSea">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_SChinaSea">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_SChinaSea">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_SChinaSea">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_Hainan">
+                    <LandNode name="AgroForest_NonPasture_Hainan">
+                        <LandNode name="AllForestLand_Hainan">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_Hainan">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_Hainan">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_Hainan">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_Hainan">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_Mekong">
+                    <LandNode name="AgroForest_NonPasture_Mekong">
+                        <LandNode name="AllForestLand_Mekong">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_Mekong">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_Mekong">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_Mekong">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_Mekong">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_Salween">
+                    <LandNode name="AgroForest_NonPasture_Salween">
+                        <LandNode name="AllForestLand_Salween">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_Salween">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_Salween">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_Salween">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_Salween">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_IrrawaddyR">
+                    <LandNode name="AgroForest_NonPasture_IrrawaddyR">
+                        <LandNode name="AllForestLand_IrrawaddyR">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_IrrawaddyR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <UnmanagedLandLeaf name="UnmanagedSoftwood_Forest_IrrawaddyR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_IrrawaddyR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                            <LandLeaf name="Softwood_Forest_IrrawaddyR">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+                <LandNode name="AgroForestLand_RusCstSE">
+                    <LandNode name="AgroForest_NonPasture_RusCstSE">
+                        <LandNode name="AllForestLand_RusCstSE">
+                            <UnmanagedLandLeaf name="UnmanagedHardwood_Forest_RusCstSE">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </UnmanagedLandLeaf>
+                            <LandLeaf name="Hardwood_Forest_RusCstSE">
+                                <land-constraint-policy>HE2024_PLEDGED_RELATIVE_AREA</land-constraint-policy>
+                            </LandLeaf>
+                        </LandNode>
+                    </LandNode>
+                </LandNode>
+            </LandAllocatorRoot>
+        </region>
+    </world>
+</scenario>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<scenario>
+    <!--BAU_NDC2035 Official10: active provincial fossil/industrial CO2 caps only. Provinces already meeting the official cap in BAU 2035 are omitted to avoid non-binding tax markets.-->
+    <world>
+        <region name="XJ">
+            <ghgpolicy name="CO2_NDC2035_XJ">
+                <market>XJ</market>
+                <constraint year="2035">149.754448</constraint>
+            </ghgpolicy>
+            <linked-ghg-policy name="CO2">
+                <price-adjust fillout="1" year="1975">1</price-adjust>
+                <demand-adjust fillout="1" year="1975">1</demand-adjust>
+                <market>XJ</market>
+                <linked-policy>CO2_NDC2035_XJ</linked-policy>
+                <price-unit>1990$/tC</price-unit>
+                <output-unit>MtC</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CO2_FUG">
+                <price-adjust fillout="1" year="1975">1</price-adjust>
+                <demand-adjust fillout="1" year="1975">1</demand-adjust>
+                <market>XJ</market>
+                <linked-policy>CO2_NDC2035_XJ</linked-policy>
+                <price-unit>1990$/tC</price-unit>
+                <output-unit>MtC</output-unit>
+            </linked-ghg-policy>
+        </region>
+        <region name="XZ">
+            <ghgpolicy name="CO2_NDC2035_XZ">
+                <market>XZ</market>
+                <constraint year="2035">8.707245</constraint>
+            </ghgpolicy>
+            <linked-ghg-policy name="CO2">
+                <price-adjust fillout="1" year="1975">1</price-adjust>
+                <demand-adjust fillout="1" year="1975">1</demand-adjust>
+                <market>XZ</market>
+                <linked-policy>CO2_NDC2035_XZ</linked-policy>
+                <price-unit>1990$/tC</price-unit>
+                <output-unit>MtC</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CO2_FUG">
+                <price-adjust fillout="1" year="1975">1</price-adjust>
+                <demand-adjust fillout="1" year="1975">1</demand-adjust>
+                <market>XZ</market>
+                <linked-policy>CO2_NDC2035_XZ</linked-policy>
+                <price-unit>1990$/tC</price-unit>
+                <output-unit>MtC</output-unit>
+            </linked-ghg-policy>
+        </region>
+        <region name="YN">
+            <ghgpolicy name="CO2_NDC2035_YN">
+                <market>YN</market>
+                <constraint year="2035">56.989104</constraint>
+            </ghgpolicy>
+            <linked-ghg-policy name="CO2">
+                <price-adjust fillout="1" year="1975">1</price-adjust>
+                <demand-adjust fillout="1" year="1975">1</demand-adjust>
+                <market>YN</market>
+                <linked-policy>CO2_NDC2035_YN</linked-policy>
+                <price-unit>1990$/tC</price-unit>
+                <output-unit>MtC</output-unit>
+            </linked-ghg-policy>
+            <linked-ghg-policy name="CO2_FUG">
+                <price-adjust fillout="1" year="1975">1</price-adjust>
+                <demand-adjust fillout="1" year="1975">1</demand-adjust>
+                <market>YN</market>
+                <linked-policy>CO2_NDC2035_YN</linked-policy>
+                <price-unit>1990$/tC</price-unit>
+                <output-unit>MtC</output-unit>
+            </linked-ghg-policy>
+        </region>
+    </world>
+</scenario>
